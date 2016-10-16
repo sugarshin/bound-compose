@@ -1,0 +1,7 @@
+{
+  "extends": ["eslint:recommended"],
+  "plugins": ["babel"],
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}

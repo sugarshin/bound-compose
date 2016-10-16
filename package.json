@@ -1,0 +1,45 @@
+{
+  "name": "bound-compose",
+  "version": "1.0.0",
+  "description": "Bound composed function",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "ava",
+    "lint": "eslint src",
+    "build": "babel -d lib src",
+    "prepublish": "npm run lint && npm test && npm run build"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sugarshin/bound-compose.git"
+  },
+  "keywords": [
+    "compose",
+    "function",
+    "utility"
+  ],
+  "author": "sugarshin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sugarshin/bound-compose/issues"
+  },
+  "homepage": "https://github.com/sugarshin/bound-compose#readme",
+  "dependencies": {
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "eslint": "^3.8.0",
+    "eslint-plugin-babel": "^3.3.0"
+  }
+}
