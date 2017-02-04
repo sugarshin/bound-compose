@@ -6,7 +6,7 @@
 [![npm version][npm-image]][npm-url]
 [![License][license-image]][license-url]
 
-Creae a bound composed function. using the [redux#compose](http://redux.js.org/docs/api/compose.html) .
+Create a bound composed function. using the [redux#compose](http://redux.js.org/docs/api/compose.html) .
 
 ```sh
 npm i bound-compose
@@ -17,7 +17,7 @@ npm i bound-compose
 ```js
 // For example,
 // `boundCompose(f, g, h)(b)(...args)` is identical to doing
-// `(b, ...args) => f(b, g(b, h(b, ...args), ...args), ...args)` .
+// `(b, ...args) => f(g(h(b, ...args), ...args), ...args)` .
 
 let result;
 result = doSomething1(result, ...args)
