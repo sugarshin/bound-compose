@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/sugarshin/bound-compose#readme",
   "dependencies": {
-    "redux": "^3.6.0"
+    "redux": "^4.0.0"
   },
   "devDependencies": {
     "ava": "^0.18.1",
